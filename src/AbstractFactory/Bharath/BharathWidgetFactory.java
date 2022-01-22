@@ -1,9 +1,6 @@
 package AbstractFactory.Bharath;
 
-import AbstractFactory.Button;
-import AbstractFactory.Grid;
-import AbstractFactory.TextBox;
-import AbstractFactory.WidgetFactory;
+import AbstractFactory.*;
 
 public class BharathWidgetFactory implements WidgetFactory {
     @Override
@@ -19,5 +16,10 @@ public class BharathWidgetFactory implements WidgetFactory {
     @Override
     public Grid createGrid() {
         return new BharathGrid();
+    }
+
+    @Override
+    public Label createLabel() {
+        return new BharathLabel();
     }
 }
