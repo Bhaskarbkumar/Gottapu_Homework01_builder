@@ -9,6 +9,7 @@ public class LoginForm {
         factory.createButton().render();
         factory.createGrid().render();
         factory.createTextBox().render();
+        factory.createLabel().render();
 
     }
 }

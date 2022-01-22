@@ -1,9 +1,6 @@
 package AbstractFactory.material;
 
-import AbstractFactory.Button;
-import AbstractFactory.Grid;
-import AbstractFactory.TextBox;
-import AbstractFactory.WidgetFactory;
+import AbstractFactory.*;
 
 public class MaterialWidgetFactory implements WidgetFactory {
     @Override
@@ -19,5 +16,10 @@ public class MaterialWidgetFactory implements WidgetFactory {
     @Override
     public Grid createGrid() {
         return new MaterialGrid();
+    }
+
+    @Override
+    public Label createLabel() {
+        return new MaterialLabel();
     }
 }
